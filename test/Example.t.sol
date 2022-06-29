@@ -10,7 +10,6 @@ contract ExampleTest is Test {
     YulDeployer yulDeployer = new YulDeployer();
 
     Example exampleContract;
-    uint256 storedValue;
 
     function setUp() public {
         exampleContract = Example(yulDeployer.deployContract("Example"));
